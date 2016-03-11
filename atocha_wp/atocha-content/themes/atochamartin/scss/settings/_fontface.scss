@@ -1,0 +1,32 @@
+
+/* @FONT-FACE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix')               format('embedded-opentype'),
+           url('#{$file-path}.woff')                     format('woff'),
+           url('#{$file-path}.ttf')                      format('truetype'),
+           url('#{$file-path}.svg##{$font-family}')      format('svg');
+  }
+}
+
+
+
+@include font-face('Cambria Italic', 'fonts/cambria-italic');
+
+
+// Font Awesome IconFont
+
+@include font-face('FontAwesome', 'fonts/fontawesome');
+
+@import '_fa-variables.scss';
+
+
+@include font-face('LaserAvalon', 'fonts/laser-avalon');
+
+@import '_la-variables.scss';

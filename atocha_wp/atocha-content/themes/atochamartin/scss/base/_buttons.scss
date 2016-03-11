@@ -1,0 +1,106 @@
+
+/* Botones
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+
+	display: inline-block;
+	//max-width: 60%;
+	padding: 2rem 5rem;
+	margin: 2rem auto;
+
+	background-color: transparent;
+	color: $color__brand;
+	border: 2px solid $color__brand;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-family: $font__font-family-secondary;
+	font-size: 3.2rem;
+	font-weight:300; 
+	line-height: 100%;
+	font-style: normal;
+	text-decoration: none;
+	//letter-spacing: 2px;
+
+	cursor: pointer;
+	white-space: nowrap;
+	user-select: none;
+	-webkit-appearance: none;
+
+	@include transicion;
+
+	&:hover{
+		background-color: $color__brand;
+		border-color: $color__brand;
+		color: #ffffff;
+	}
+
+	&:active,
+	&:focus{
+		color: $color__brand-terciary;
+		outline: none;
+	}
+
+	&.btn__primary{
+		border-color: $color__brand;
+		color: $color__brand;
+		a{
+			color: $color__brand;
+		}
+
+	}
+
+	&.btn__secondary{
+		border-color: $color__brand-secondary;
+		color: $color__brand-secondary;
+		a{
+			color: $color__brand-secondary;
+		}
+
+	}
+
+	&.btn__primary:hover,
+	&.btn__secondary:hover{
+		color: $color__brand;
+		border-color: $color__brand;
+		a{
+			color: $color__brand;
+		}
+	}
+
+	&.btn__white{
+		color: #ffffff;
+		border-color: #ffffff;
+
+		&:hover{
+			color: $color__brand;
+			background-color: #ffffff;
+			border-color: #ffffff;
+		}
+	}
+
+
+
+}
+
+/* Media queries
+––––––––––––––––––––––––––
+
+@media only screen and (max-width: 768px) {
+	.btn,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		padding: 1.5rem 2rem;
+
+		font-size: 1.4rem;
+	}
+}
+
+–––––––––––––––––––––––– */

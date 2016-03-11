@@ -1,0 +1,51 @@
+ [class^="la_"]:before, [class*=" la_"]:before {
+  font-family: "LaserAvalon";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.la_beauty:before { content: '\e800'; } /* '' */
+.la_category:before { content: '\e801'; } /* '' */
+.la_clock:before { content: '\e802'; } /* '' */
+.la_comment:before { content: '\e803'; } /* '' */
+.la_location:before { content: '\e804'; } /* '' */
+.la_love:before { content: '\e805'; } /* '' */
+.la_mail:before { content: '\e806'; } /* '' */
+.la_mustache:before { content: '\e807'; } /* '' */
+.la_phone:before { content: '\e808'; } /* '' */
+.la_power:before { content: '\e809'; } /* '' */
+.la_river:before { content: '\e80a'; } /* '' */
+.la_snow:before { content: '\e80b'; } /* '' */
+.la_stick:before { content: '\e80c'; } /* '' */
+.la_sun:before { content: '\e80d'; } /* '' */
+.la_tag:before { content: '\e80e'; } /* '' */
+.la_thunder:before { content: '\e80f'; } /* '' */

@@ -1,0 +1,50 @@
+
+/* Grilla de Imagenes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.grilla-module{
+
+	.grilla-module--slide{
+		float: left;
+		width: 25%;
+		height: 100%;
+		min-height: 30rem;
+
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50%;
+
+
+		&.grilla-module--slide__1{ width: 100%;}	
+		&.grilla-module--slide__2{ width: 50%;}	
+		&.grilla-module--slide__3{ width: 33.33%;}		
+
+/*
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+*/
+	}
+/*
+	.grilla-module--slider{
+		min-height: auto;
+		.grilla-module--slide{
+			float: none;
+			width: auto;
+			height: auto;
+
+		}
+	}
+*/
+}
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+	
+}
+

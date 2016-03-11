@@ -1,0 +1,45 @@
+
+/* Quote
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.quote-module{
+	padding: 10rem 0;
+	background-color: #000000;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+
+	.quote-autor{
+		font-size: 2.7rem;
+		font-weight: 300;
+	}
+
+	blockquote{
+		color: #ffffff;
+		font-size: 2.4rem;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 412px) {
+
+	.quote-module{
+		padding: 5rem 0;
+
+
+	}
+}

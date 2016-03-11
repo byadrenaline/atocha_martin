@@ -1,0 +1,121 @@
+
+/* Slider Module
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.slider{
+
+	.slider--slide{
+		position: relative;
+		height: 60rem;
+
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		/*
+		img{
+			@include centrado;
+			width: 100%;
+		}
+		*/
+		.slider--claim{
+			@include centrado_v;
+			left: 5rem;
+
+			//width: 96rem;
+			max-width: 40%;
+			padding: 1rem;
+
+			background-color: rgba($color__brand, 0.8);;
+			color: #ffffff;
+
+			font-size: 3rem;
+			line-height: 120%;
+			font-style: italic;
+			font-family: $font__font-family-terciary;
+		}
+
+		.slider--oferta{
+			@include centrado_v;
+			right: 5rem;
+
+			width: 30rem;
+			max-width: 50%;
+			height: auto;
+
+			padding: 2rem;
+
+			background-color: rgba($color__brand, 0.8);
+			color: #ffffff;
+
+			text-align: center;
+
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			h3{
+				color: #ffffff;
+				text-transform: uppercase;
+			}
+			.slider--precio{
+				font-size: 8rem;
+				letter-spacing: -3px;
+				margin: 0;
+			}
+		}
+
+
+	}
+
+
+
+}
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+@media only screen and (max-width: 768px) {
+	
+	.slider{
+		.slider--slide{
+			.slider--claim{
+				@include centrado_h;
+				top: 5rem;
+				width: 96rem;
+				max-width: 70%;
+
+				font-size: 1.8rem;
+				text-align: center;
+			}
+			.slider--oferta{
+				@include centrado;
+
+				width: 96rem;
+				max-width: 50%;
+				margin-top: 5rem;
+
+			}			
+		}
+	}
+
+
+}
+
+@media only screen and (max-width: 412px) {
+	.slider{
+		.slider--slide{
+			.slider--claim{
+				max-width: 90%;
+			}
+			.slider--oferta{
+				max-width: 80%;
+
+			}			
+		}
+	}
+
+}

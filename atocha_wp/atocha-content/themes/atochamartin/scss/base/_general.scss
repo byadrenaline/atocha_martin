@@ -1,0 +1,96 @@
+
+/* General
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html{
+	font-size: 62.5%; /* 62.5% = 10px como base para unidades REM */	
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #000000;
+	font-size: $font__font-size;
+	line-height: $font__line-height;
+	font-family: $font__font-family;
+	color: $white;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+}
+
+hr {
+
+	background-color: transparent;
+	border: 0;
+	border-bottom: 5px dotted $color__gray-light;
+	max-width: 30rem; 
+	height: 5px;
+	margin: 3rem auto;
+}
+
+
+
+/* Accesibilidad - Screen Readers
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+
+	&:focus {
+		clip: auto !important;
+		display: block;
+		width: auto;
+		height: auto;
+
+		font-weight: bold;
+		font-style: italic;
+		line-height: normal;
+		text-decoration: none;
+		color: $color__gray;
+
+		z-index: 100000; /* Above WP toolbar. */
+	}
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/* Clearings
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}

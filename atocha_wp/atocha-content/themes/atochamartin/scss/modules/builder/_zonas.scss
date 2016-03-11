@@ -1,0 +1,215 @@
+
+/* Zonas depilación
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.zonas-module{
+	margin-bottom: 10rem;
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;		
+	}
+
+	figure{
+		margin: 0;
+		height: 40rem;
+		img{
+			max-height: 100%;
+		}
+
+	}
+	.zonas-module--tab{
+		p{
+			display: inline-block;
+			vertical-align: middle;				
+		}
+
+	}
+
+	.zonas-module--icon{
+			
+		width: 5rem;
+		height: 5rem;
+		margin-right: 1rem;
+
+		border: 2px solid $color__brand;
+		border-radius: 5rem;
+
+		color: $color__brand;
+
+		line-height: 4.6rem;
+		text-align: center;
+		text-transform: uppercase;
+		//font-weight: bold;
+		font-size: 2.4rem;
+
+		@include transicion;
+
+		
+
+	}
+	.zonas-module--incluye{
+		width: calc(100% - 6.5rem);
+	}
+	.zonas-module--content{
+		min-height: 40rem;
+		.zonas-module--content-wrap{
+			
+			display: none;
+
+			figure{
+				position: relative;
+				height: 40rem;
+				margin-bottom: 5rem;
+				img{
+					@include centrado;
+					display: block;
+				}
+				
+			}
+
+			&.zonas-module--content-wrap__active{
+				display: block;
+				@include transicion;
+				//opacity: 1;
+			}
+		}
+	}
+
+	.zonas-module--precios{
+		border: 1px solid $color__gray;
+		text-align: center;
+		padding: 2rem;
+		strong{font-size: 2.4rem;}
+	}
+
+
+	&.tab__mujer {
+
+		.zonas-module--icon{
+			color: $color__brand;
+			border-color: $color__brand;
+		}
+
+		.zonas-module--tab:hover,
+		.zonas-module--tab__active{
+			.zonas-module--icon{
+				color: #ffffff;
+				background-color: $color__brand;
+			}
+		}
+
+		.zonas-module--precios strong{
+			color: $color__brand;
+		}
+
+	}
+	&.tab__hombre {
+
+		.zonas-module--icon{
+			color: $color__brand-secondary-dark;
+			border-color: $color__brand-secondary-dark;
+		}
+
+		.zonas-module--tab:hover,
+		.zonas-module--tab__active{
+			.zonas-module--icon{
+				color: #ffffff;
+				background-color: $color__brand-secondary-dark;
+			}
+		}
+
+		.zonas-module--precios strong{
+			color: $color__brand-secondary-dark;
+		}
+
+	}
+
+}
+
+/*
+.zonas-module{
+	margin-bottom: 5rem;
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		.zonas-module--tab{ //li
+			p{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.zonas-module--icon{
+				
+				width: 5rem;
+				height: 5rem;
+				margin-right: 1rem;
+
+				border: 2px solid $color__brand;
+				border-radius: 5rem;
+
+				color: $color__brand;
+
+				line-height: 4.6rem;
+				text-align: center;
+				text-transform: uppercase;
+				//font-weight: bold;
+				font-size: 2.4rem;
+
+				@include transicion;
+
+			}
+
+			.zonas-module--include{
+				width: calc(100% - 6.5rem);
+				//background-color: red;
+			}
+
+
+
+			&:hover, 
+			&.zonas-module--tab__active{
+				.zonas-module--icon{
+					background-color: $color__brand;
+					color: #ffffff;
+				}
+					
+			}
+		}
+	}	
+
+	.zonas-module--figure{
+		//background-color: red;
+
+		figure{
+			position: relative;
+			min-height: 40rem;
+			margin: 0;
+
+			img.zonas-module--image{
+				@include centrado;
+
+				max-height: 100%;
+				//display: none;
+				opacity: 0;
+
+
+				
+				&.zonas-module--image__active{
+					//display: block;
+					@include transicion;
+					opacity: 1;
+
+				}
+				
+			}
+		}
+
+
+	}
+
+	.zonas-module--precio{
+		border: 1px solid $color__gray;
+	}
+}
+ */

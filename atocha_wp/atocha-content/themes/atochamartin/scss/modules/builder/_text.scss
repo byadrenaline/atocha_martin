@@ -1,0 +1,87 @@
+
+/* Text Module
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.text-module{
+
+	padding: 5rem 0;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+
+	.column{
+		position: relative;
+
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50%;
+
+
+	}
+
+	&.text-module__center{
+		padding: 0;
+		.column{
+			position: relative;
+			min-height: 20rem;
+		}
+
+
+		.column-content{
+			@include centrado;
+			width: 100%;
+			text-align: left;
+
+		}
+	}
+
+}
+
+.title_align{
+
+	&.title_align__left{
+		float: left;
+
+		h2{
+			text-align: left;
+		}
+	}
+
+	&.title_align__right{
+		float: right;
+
+		h2{
+			text-align: right;
+			margin-bottom: 6rem;
+			&::after{
+				 position: absolute;
+				 right: 0;
+			}
+		}
+	}
+	
+	&.title_align__center{
+		margin: auto;
+
+		h2{
+			text-align: center;
+			&::after{
+				margin: 3rem auto;
+			}		
+		}
+	}
+}
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+
+
+	.text-module{
+		padding: 5rem 0;
+	}
+	
+}

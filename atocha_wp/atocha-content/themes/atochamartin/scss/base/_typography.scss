@@ -1,0 +1,175 @@
+
+/* Tipografia
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{ 
+	clear: both;
+	font-family: $font__font-family-secondary;
+	line-height: 120%;
+	color: $white;
+	margin: 1rem 0;
+	text-align:center;
+}
+
+h1 { 
+	font-family: $font__font-family;
+	font-size: 1.9rem;
+	font-weight: 400;
+}
+
+h2{ 
+	font-size: 6.6rem;
+	font-weight: 700;
+	font-style: italic;
+	color: $white;
+
+	&::after{
+		content: '';
+
+		display: block;
+		width: 20rem;
+		height: 1px;
+		margin: 3rem 0;
+		background-color: $color__brand;
+	}
+}
+
+h3 { 
+	font-size: 3.5rem;
+	font-weight: 700;
+	font-style: italic;
+	color: $color__brand;
+	
+	&::after{
+		content: '';
+
+		display: block;
+		width: 10rem;
+		height: 1px;
+		margin: 2rem auto;
+		background-color: $color__brand;
+	}
+}
+
+h4 {
+	font-size: 3.3rem;
+	color: $white;
+	font-weight: 700;
+	font-style: italic;
+}
+
+h5 { 
+
+}
+
+p{
+	margin-bottom: 3rem; 
+}
+
+strong{
+	font-weight: bold;
+}
+
+
+/* Blockquote // Citas
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+blockquote{
+	margin: 5rem -10rem;
+
+	color: $white;
+	font-size: 3.7rem;
+	font-family: $font__font-family-terciary;
+
+/*
+	p{
+		
+		&::before,
+		&::after {
+			display: inline;
+			margin: 0 0.5rem;
+			//font-family: 'FontAwesome';
+			content: '"';
+		}
+
+	} 
+*/
+}
+
+
+/* Superíndice / Subíndice
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+sup, 
+sub {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+   font-size: .8em;
+}
+sub { top: 0.4em; }
+
+/* Otros
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+dfn, 
+cite, 
+em, 
+i {
+	font-style: italic;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, 
+kbd, 
+tt, 
+var {
+
+}
+
+abbr, 
+acronym {
+	cursor: help;
+}
+
+mark, 
+ins {
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+	blockquote{
+		margin: 5rem 0rem;
+		text-align: left;
+	}
+
+}
+
+
+@media only screen and (max-width: 412px) {
+
+}
+

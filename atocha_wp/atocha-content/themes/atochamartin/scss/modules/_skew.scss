@@ -1,0 +1,45 @@
+
+.skew{
+
+	//margin: -20rem 0;
+&::after{
+		content: '';
+		
+		position: absolute;
+		bottom: 0rem;
+		left: 0;
+		z-index: 1;
+		
+		width: 100%;
+		height: 10rem;
+		
+
+		background-color: $black;
+		
+		-webkit-transform: skewY(2deg) translateY(50%);
+		-ms-transform: skewY(2deg) translateY(50%);
+		-o-transform: skewY(2deg) translateY(50%);
+		transform: skewY(2deg) translateY(50%);
+
+
+		//background: linear-gradient(to left bottom, transparent 50%, $black 50%);
+
+	}
+
+	&::before{
+		content: '';
+		display: block;
+		height: 10rem;
+
+		transform: skew(-2deg) translateY(-50%);
+		background-color: red;
+	}
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+/* EQUIPO
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a:hover .equipo_miembro{
+		h3,
+		figure{
+			display: none;
+		}
+	}
+
+
+section.equipo-block{
+	padding: 10rem 0;
+} 
+
+nav.equipo__nav{
+		width: 100%;
+		margin: auto;
+		text-align: center;
+
+		&::after{
+			content: '';
+
+			display: block;
+			width: 20rem;
+			height: 1px;
+			margin: 3rem auto;
+			background-color: $color__brand;
+		}
+
+		ul{
+			margin:auto;
+			text-align: center;
+		}
+
+		li{
+			display: inline-block;
+			//width: 30rem;
+			//margin:0 1rem;
+
+			&:first-child {
+    			//padding-right: 3rem;
+    			//border-right: 2px solid $color__brand;
+    			a::after{
+    				content: "/";
+    				display: inline-block;
+    				margin: 0 3rem;
+    				font-size: 4rem;
+    				color: $color__brand;
+    			}
+
+			}
+	
+			a{
+				display: block;
+				width: 25rem;
+				font-size: 4rem;
+				font-weight: 300;
+				font-style: italic;
+				color: $white;
+				text-transform: uppercase;
+				text-decoration: none;
+
+				&:focus,
+				&:visited,
+				&:hover{
+					font-weight: 700;
+
+				}
+			}
+		}
+}
+
+.equipo_miembro{
+	position: relative;
+	height: 40rem;
+	margin: 1rem 0;
+	padding: 0;
+	 
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	h3{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		z-index: 100;
+		
+		color: $white;
+		text-transform: uppercase;
+
+		-webkit-transform: 	translate(-50%);
+		-ms-transform: 		translate( -50%);
+		transform: 			translate( -50%);
+
+		
+	}
+
+
+	figure{
+
+		@include centrado;
+
+		@include transicion;
+
+		display: block;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+
+		img{
+			@include centrado;
+			display: block;
+			width: 100%;
+
+		}
+	}
+
+	&.column{
+		padding:0;
+	}
+}
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+	.equipo_miembro{
+		
+		margin: 0;
+
+		&.column{
+			&.column__fourth {width: 50%;}
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.equipo_miembro{
+
+		margin: 0;
+		
+		&.column{
+			&.column__fourth {width: 100%;}
+		}
+	}
+}
+

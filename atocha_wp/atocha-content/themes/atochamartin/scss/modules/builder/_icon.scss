@@ -1,0 +1,66 @@
+  /* PREMIOS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.icon-module{
+
+	text-align: center;
+	padding: 5rem 0;
+
+	.icon-content-padding{
+
+		padding: 2rem 0;
+
+	}
+
+	p{
+		margin: 1rem 0;
+	}
+
+	.icon-title{
+		font-family: $font__font-family-secondary;
+		font-weight: bold;
+		font-size: 6rem;
+	}
+
+	.icon-tab{
+
+		&::after{
+			display: none;
+		}
+	}
+
+
+	.icon-conten{
+
+		border: 2px solid $color__brand;
+		width: 100%;
+
+		
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+.icon-module{
+
+	.icon-tab{
+
+		&::after{
+			content: $fa-adjust;
+			display: block;
+			margin: 0 auto;
+			font-family: 'FontAwesome' ;	
+			font-size: 25px;
+			color: $color__brand;
+		}
+	}
+
+	.icon-conten{
+		display: none;
+	}
+}
+
+
+}
